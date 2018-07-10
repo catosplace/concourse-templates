@@ -9,5 +9,7 @@ jobs:
         type: docker-image
         source: { repository: busybox }
       run:
-        path: echo
-        args: [hello world]
+        path: env
+        args: []
+    params:
+      USERNAME: ((foo_param))
